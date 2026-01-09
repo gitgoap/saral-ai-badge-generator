@@ -4,6 +4,27 @@ Add the SARAL AI badge to your profile photo and join the open-source AI movemen
 
 ![SARAL AI Badge](assets/saral-badge.png)
 
+## 🤝 Contribute
+
+We welcome contributions! Here are two features we'd love help building:
+
+### 1. Image Position Adjustment for Non-Square Photos
+When a user uploads an image that isn't 1:1 (square), allow them to **pan/scroll the image** within the badge frame to position it perfectly:
+- **Portrait photo** (height > width): User can scroll vertically to choose which part appears in the badge
+- **Landscape photo** (width > height): User can scroll horizontally to center their face
+
+This gives users control instead of auto-cropping to center.
+
+### 2. Zoom/Scale Control
+Allow users to **zoom in or zoom out** of their uploaded photo before applying the badge:
+- Useful when the face is too small in the original photo
+- Lets users crop tighter or show more background
+- Combined with position adjustment, gives complete control over framing
+
+Could be implemented as a simple slider or ± buttons.
+
+---
+
 ## Features
 
 - 📤 **Upload Photo** - Drag & drop or click to upload your profile photo
@@ -12,7 +33,7 @@ Add the SARAL AI badge to your profile photo and join the open-source AI movemen
 - 🎨 **Modern Design** - Beautiful glassmorphism UI with smooth animations
 - 📱 **Responsive** - Works on desktop and mobile
 
-## Quick Start
+## Local Steup of the project
 
 Simply open `index.html` in your browser, or use a local server:
 
@@ -32,7 +53,6 @@ Then visit `http://localhost:8080`
 2. View the side-by-side comparison (original vs badged)
 3. Click "Download Image" to save your new profile photo
 
-💡 **Need your LinkedIn photo?** Expand the helper section at the bottom of the page for step-by-step instructions.
 
 ## Updating the Badge
 
@@ -64,15 +84,8 @@ saral-ai-badge-generator/
 |-----------|------------|
 | Frontend | HTML5, CSS3, Vanilla JavaScript |
 | Image Processing | HTML5 Canvas API |
-| Deployment | Static hosting (Vercel, Netlify, GitHub Pages) |
+| Deployment | Static hosting (Vercel) |
 
-## Deployment
-
-This is a static site - no backend required! Deploy to:
-
-- **Vercel** - Connect your GitHub repo and deploy
-- **Netlify** - Import from Git and deploy
-- **GitHub Pages** - Enable in repo settings
 
 ## License
 
