@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Add the SARAL AI badge to your profile photo. Join the open-source AI movement and show your support!">
+    <meta name="keywords" content="SARAL AI, badge generator, profile photo, open source, AI movement">
+    <meta property="og:title" content="SARAL AI Badge Generator">
+    <meta property="og:description" content="Add the SARAL AI badge to your profile photo and join the movement!">
+    <meta property="og:type" content="website">
+    <title>SARAL AI Badge Generator | Join the Movement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+    <div class="floating-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="logo-container">
+                <img src="assets/saral-badge.png" alt="SARAL AI Logo" class="hero-logo">
+            </div>
+            <h1 class="hero-title">SARAL AI Badge Generator</h1>
+            <p class="hero-subtitle">Join the open-source AI movement. Add the SARAL AI badge to your profile photo and
+                spread the word!</p>
+        </header>
+
+        <!-- Upload Section (Primary) -->
+        <section class="upload-section">
+            <div class="upload-zone" id="upload-zone">
+                <div class="upload-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="17 8 12 3 7 8" />
+                        <line x1="12" y1="3" x2="12" y2="15" />
+                    </svg>
+                </div>
+                <p class="upload-text">Drag & drop your photo here</p>
+                <p class="upload-subtext">or click to browse</p>
+                <p class="upload-formats">Supports: PNG, JPG, WEBP (Max 10MB)</p>
+                <input type="file" id="file-input" accept="image/png,image/jpeg,image/webp" hidden>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-section">
+            <h2 class="section-title">How It Works</h2>
+            <div class="how-it-works-image">
+                <img src="assets/how-it-works.png" alt="How It Works: Upload your photo, get it with SARAL AI badge">
+            </div>
+        </section>
+
+        <!-- Preview & Result Section -->
+        <section class="result-section hidden" id="result-section">
+            <h2 class="section-title">Preview</h2>
+
+            <div class="comparison-container">
+                <!-- Original Image -->
+                <div class="image-card">
+                    <h3 class="card-label">Original</h3>
+                    <div class="image-wrapper">
+                        <img id="original-preview" src="" alt="Original photo">
+                    </div>
+                </div>
+
+                <!-- Arrow -->
+                <div class="arrow-divider">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                </div>
+
+                <!-- Result Image -->
+                <div class="image-card">
+                    <h3 class="card-label">With SARAL AI Badge</h3>
+                    <div class="image-wrapper">
+                        <img id="result-preview" src="" alt="Photo with SARAL AI badge">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn btn-secondary" id="reset-btn">
+                    <span>↺</span> Try Another Photo
+                </button>
+                <button class="btn btn-primary" id="download-btn">
+                    <span>⬇</span> Download Image
+                </button>
+            </div>
+        </section>
+
+        <!-- LinkedIn Helper Section (Secondary, at bottom) -->
+        <section class="helper-section">
+            <details class="linkedin-helper">
+                <summary class="helper-toggle">
+                    <span class="helper-icon">💡</span>
+                    <span>How to get your LinkedIn profile photo</span>
+                    <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </summary>
+                <div class="helper-content">
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Open LinkedIn</h4>
+                                <p>Go to <a href="https://www.linkedin.com/in/me" target="_blank" rel="noopener">your
+                                        LinkedIn profile</a> and log in</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Click Your Photo</h4>
+                                <p>Click on your profile picture to open the full-size view</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Save the Image</h4>
+                                <p>Right-click on the photo and select <strong>"Save image as..."</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Upload Above</h4>
+                                <p>Use the upload area above to add your downloaded photo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <!-- Processing Overlay -->
+        <div class="processing-overlay hidden" id="processing-overlay">
+            <div class="processing-card">
+                <div class="processing-spinner"></div>
+                <p class="processing-text">Adding SARAL AI badge...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ for the <strong>SARAL AI</strong> community</p>
+        <div class="footer-links">
+            <a href="https://github.com/gitgoap/saral-ai-badge-generator" target="_blank" rel="noopener">GitHub</a>
+            <span class="divider">•</span>
+            <a href="https://saral.democratiseresearch.in/api-setup" target="_blank" rel="noopener">Join the
+                Movement</a>
+        </div>
+    </footer>
+
+    <!-- Hidden Canvas for Image Processing -->
+    <canvas id="canvas" style="display: none;"></canvas>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
