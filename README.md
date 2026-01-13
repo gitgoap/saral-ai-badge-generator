@@ -89,7 +89,7 @@ saral-ai-badge-generator/
 
 ## License
 
-MIT License - Free to use and modify
+CC License - Free to use and modify, but also mention the credit.
 
 ---
 
